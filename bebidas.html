@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bebidas - Corte & Sabor">
+    <title>Bebidas - Corte & Sabor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0F8FF; /* Fondo azul claro */
+            color: #333;
+        }
+        header {
+            background-color: #6A4E23;
+            color: #FFD700;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            color: #6A4E23;
+            margin: 40px 0;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 24px;
+            color: #6A4E23;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 22px;
+            color: #FFD700;
+        }
+
+        footer {
+            background-color: #6A4E23;
+            color: #FFD700;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Corte & Sabor</h1>
+    <p>Las mejores bebidas para acompañar tu comida</p>
+</header>
+
+<div class="section-title">
+    <h2>Nuestras Bebidas</h2>
+</div>
+
+<div class="product-container">
+    <!-- Cerveza Artesanal -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpPWmElbHraEKJkT84nJXA3tPMYN5DDGlHQ&s" alt="Cerveza Artesanal">
+        <div class="product-info">
+            <h3>Cerveza Artesanal</h3>
+            <p>Disfruta de una cerveza artesanal bien fría, ideal para acompañar tus cortes.</p>
+            <span class="price">$60</span>
+        </div>
+    </div>
+    
+    <!-- Vino Tinto -->
+    <div class="product-card">
+        <img src="https://restaurantecasares.com/wp-content/uploads/2018/11/vinos-tinto-e1542308841841.jpg" alt="Vino Tinto">
+        <div class="product-info">
+            <h3>Vino Tinto</h3>
+            <p>El vino tinto perfecto para maridar con los cortes más selectos de nuestra carta.</p>
+            <span class="price">$120</span>
+        </div>
+    </div>
+
+    <!-- Cocteles Especiales -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzDRYTnhKYLc3x-aZcKFFdYMgfYNRJYPHOwA&s" alt="Cocteles Especiales">
+        <div class="product-info">
+            <h3>Cocteles Especiales</h3>
+            <p>Variedad de cocteles para darle un toque único a tu experiencia gastronómica.</p>
+            <span class="price">$80</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Corte & Sabor. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

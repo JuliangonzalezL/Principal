@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Postres - Corte & Sabor">
+    <title>Postres - Corte & Sabor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8DC; /* Fondo color crema */
+            color: #333;
+        }
+        header {
+            background-color: #6A4E23;
+            color: #FFD700;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            color: #6A4E23;
+            margin: 40px 0;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 24px;
+            color: #6A4E23;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 22px;
+            color: #FFD700;
+        }
+
+        footer {
+            background-color: #6A4E23;
+            color: #FFD700;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Corte & Sabor</h1>
+    <p>Los postres más deliciosos para culminar tu experiencia gastronómica</p>
+</header>
+
+<div class="section-title">
+    <h2>Nuestros Postres</h2>
+</div>
+
+<div class="product-container">
+    <!-- Cheesecake -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yaz_qCb-qKeWOTQCpeeCHwN7LkoGcCKvfw&s" alt="Cheesecake de Frutos Rojos">
+        <div class="product-info">
+            <h3>Cheesecake de Frutos Rojos</h3>
+            <p>Un cheesecake suave con una capa de frutos rojos frescos para endulzar tu experiencia.</p>
+            <span class="price">$150</span>
+        </div>
+    </div>
+    
+    <!-- Brownie -->
+    <div class="product-card">
+        <img src="https://www.unileverfoodsolutions.com.mx/dam/global-ufs/mcos/NOLA/calcmenu/recipes/MX-recipes/In-Development/FULL-BROWNIES-header-1.jpg" alt="Brownie Caliente">
+        <div class="product-info">
+            <h3>Brownie Caliente</h3>
+            <p>El brownie más delicioso, servido caliente con helado de vainilla y chocolate derretido.</p>
+            <span class="price">$120</span>
+        </div>
+    </div>
+
+    <!-- Tarta de Limón -->
+    <div class="product-card">
+        <img src="https://cocina-casera.com/wp-content/uploads/2017/10/Tarta-de-lim%C3%B3n-f%C3%A1cil.jpg" alt="Tarta de Limón">
+        <div class="product-info">
+            <h3>Tarta de Limón</h3>
+            <p>Una tarta refrescante con el equilibrio perfecto entre dulce y ácido, coronada con merengue.</p>
+            <span class="price">$130</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Corte & Sabor. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corte & Sabor - Restaurante especializado en cortes de carne a la parrilla en Puebla">
+    <title>Corte & Sabor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6A4E23;
+            text-align: center;
+            padding: 30px 0;
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+        }
+        nav {
+            background-color: #6A4E23;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: #6A4E23;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            padding: 10px 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        section {
+            margin: 50px 0;
+            padding: 30px 0;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #6A4E23;
+            text-align: center;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .menu ul li {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .menu ul li:hover {
+            background-color: #FFD700;
+            color: #fff;
+        }
+        .help {
+            background-image: url('help-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+        .help p, .location p, .opinions p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        footer {
+            background-color: #6A4E23;
+            color: #FFD700;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .cta-button {
+            background-color: #FFD700;
+            color: #6A4E23;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #6A4E23;
+            color: #FFD700;
+        }
+
+        /* Estilos para la sección "Queremos conocerte" */
+        #conocerte {
+            background-color: #6A4E23;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+        #conocerte h2 {
+            color: #FFD700; /* Amarillo para que resalte */
+        }
+        #conocerte a {
+            text-decoration: none;
+            color: black; /* Texto del botón en negro */
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #FFD700;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        #conocerte a:hover {
+            background-color: #6A4E23;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    
+    <h1>Corte & Sabor</h1>
+    <p>Disfruta los mejores cortes de carne, ¡un festín para tus sentidos!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="#principal">Principal</a></li>
+        <li><a href="cortes.html">Menú Cortes</a></li>
+        <li><a href="postres.html">Menú Postres</a></li>
+        <li><a href="bebidas.html">Menú Bebidas</a></li>
+        <li><a href="#lugar">Lugar</a>
+            <ul>
+                <li><a href="lugar1.html">Lugar 1 - Avenida Juárez</a></li>
+                <li><a href="lugar2.html">Lugar 2 - Cholula</a></li>
+                <li><a href="lugar3.html">Lugar 3 - Avenida Atlixcayotl</a></li>
+            </ul>
+        </li>
+        <li><a href="#opiniones">Opiniones</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- Sección Principal -->
+    <section id="principal">
+        <h2>Bienvenidos a Corte & Sabor</h2>
+        <p>En Corte & Sabor, nos dedicamos a ofrecer cortes de carne de la más alta calidad. Todo nuestro menú está preparado con técnicas de parrilla únicas que resaltan el sabor y la jugosidad de cada corte. Nuestro objetivo es brindarte una experiencia inolvidable en cada visita.</p>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu">
+        <h2>Menú Gourmet</h2>
+        <div class="menu">
+            <h3 id="cortes">Cortes de Carne</h3>
+            <ul>
+                <li>Entrecot a la Parrilla</li>
+                <li>Ribeye con Salsa de Mostaza y Miel</li>
+                <li>Costillas Baby Back</li>
+                <li>Chuleta de Cerdo</li>
+                <li>Hamburguesa Gourmet con Bacon</li>
+                <li>T-Bone Premium</li>
+                <li>Filete Mignon al Vino Tinto</li>
+            </ul>
+            <h3 id="postres">Postres</h3>
+            <ul>
+                <li>Tarta de Queso con Fresas</li>
+                <li>Helado Artesanal de Vainilla y Frutos Rojos</li>
+                <li>Panna Cotta con Coulis de Frambuesa</li>
+            </ul>
+            <h3 id="bebidas">Bebidas</h3>
+            <ul>
+                <li>Vino Tinto Reserva</li>
+                <li>Cerveza Artesanal Local</li>
+                <li>Cócteles Exclusivos: Mojito de Menta y Limón</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Queremos Conocerte -->
+    <section id="conocerte">
+        <h2>¡Queremos conocerte!</h2>
+        <p>Nos encantaría saber más sobre ti y tu experiencia en Corte & Sabor. Haz clic en el siguiente enlace para llenar nuestro formulario y estar en contacto:</p>
+        <p><a href="Forma.html" class="cta-button">Ir al Formulario</a></p>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="lugar">
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en el centro de Puebla, en la Avenida Principal 123, en la zona más vibrante de la ciudad. Ven a disfrutar de un ambiente único mientras saboreas nuestros cortes de carne.</p>
+    </section>
+
+    <!-- Opiniones -->
+    <section id="opiniones">
+        <h2>Opiniones de Nuestros Clientes</h2>
+        <p>"¡La mejor carne que he probado! Un servicio excelente y una atmósfera increíble." - Laura G.</p>
+        <p>"Recomiendo totalmente el Filete Mignon, ¡una delicia!" - Marco T.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Corte & Sabor. Todos los derechos reservados.</p>
+    <a href="Reservacion.html">
+        <button class="cta-button">Haz tu Reservación</button>
+    </a>
+ <!-- Botón para descargar el Tríptico -->
+    <a href="Triptico.pdf" download>
+        <button class="cta-button" style="font-size: 14px; padding: 6px 12px; margin-top: 10px;">Tríptico</button>
+    </a>
+</footer>
+
+</body>
+</html>

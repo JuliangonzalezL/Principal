@@ -1,0 +1,96 @@
+<!-- Formulario de Reservación para Corte & Sabor -->
+<form action="https://formspree.io/f/xpwlgqll" method="POST">
+  <h2>Reserva tu mesa en Corte & Sabor</h2>
+  
+  <label>
+    Tu nombre:
+    <input type="text" name="name" required>
+  </label>
+  
+  <label>
+    Tu correo electrónico:
+    <input type="email" name="email" required>
+  </label>
+  
+  <label>
+    Número de personas:
+    <input type="number" name="guests" min="1" required>
+  </label>
+  
+  <label>
+    Fecha de la reservación:
+    <input type="date" name="date" required>
+  </label>
+  
+  <label>
+    Hora de la reservación:
+    <input type="time" name="time" required>
+  </label>
+  
+  <label>
+    Peticiones especiales:
+    <textarea name="special_requests" placeholder="Si tienes alguna petición especial, indícalo aquí..." rows="4"></textarea>
+  </label>
+  
+  <button type="submit">Enviar Reservación</button>
+</form>
+
+<!-- Estilos para el formulario -->
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: #6A4E23; /* Color de corte y sabor */
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #6A4E23;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  button {
+    background-color: #FFD700;
+    color: #6A4E23;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #6A4E23;
+    color: #FFD700;
+  }
+</style>

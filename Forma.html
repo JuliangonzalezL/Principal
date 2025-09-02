@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Platillos del Mundo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.95); /* Fondo opaco para mejor lectura */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      text-align: center;
+      color: #d35400;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .images {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .images img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #f0ad4e;
+      transition: transform 0.3s;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 30px auto 0 auto;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="https://formspree.io/f/mjkoqkzv" method="POST">
+    <h2>🍽️ Platillos del Mundo</h2>
+
+    <label>
+      Correo electrónico:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Nombre completo:
+      <input type="text" name="nombre_completo" required>
+    </label>
+
+    <label>
+      ¿Cuál es tu platillo favorito?
+</label>
+    <div class="images">
+      <img src="https://i0.wp.com/foodandwineespanol.com/wp-content/uploads/2025/07/Los-Panchos-chiles-en-nogada-portada.jpg?fit=1280%2C720&ssl=1" alt="Pastel">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzDBFr93KHjlzcVVg1mYrBfMVO9YjIG778A&s" alt="Helado">
+      <img src="https://i.blogs.es/92fc7c/como-preparar-carne-para-tacos-al-pastor-1-/650_1200.jpg" alt="Frutas frescas">
+    </div>
+      <input type="text" name="platillo_favorito" placeholder="Ej: Tacos Al Pastor" required>
+    </label>
+
+    <label>
+      ¿Cuál es tu bebida favorita?
+</label>
+    <div class="images">
+      <img src="https://cantinasalonflorida.com/wp-content/uploads/2019/09/190903_diez-bebidas-tradicionales-de-mexico-que-debes-conocer__Cantina-Salon-Florida.jpg" alt="Pastel">
+      <img src="https://cdn.forbes.com.mx/2018/07/Captura-de-pantalla-8-e1532751202149-577x360.png" alt="Helado">
+      <img src="https://cantinasalonflorida.com/wp-content/uploads/2019/12/191211_las-cinco-bebidas-mas-calientes-y-sabrosas-para-espantar-el-frio__Cantina-Salon-Florida.jpg" alt="Frutas frescas">
+    </div>
+      <input type="text" name="bebida_favorita" placeholder="Ej: Chocolate Caliente">
+    </label>
+
+    <label>
+      ¿Cuál es tu postre preferido?
+    </label>
+    <div class="images">
+      <img src="https://panamarbakery.com/public/Image/2021/10/245226132_2657858767842718_2576619657092385030_n_Grande.jpg" alt="Pastel">
+      <img src="https://images.aws.nestle.recipes/resized/2024_10_28T12_31_11_badun_images.badun.es_e41dc162dc5d_postre_de_chocolate_negro_y_blanco_con_frutos_rojos_para_san_valentin_1290_742.jpg" alt="Helado">
+      <img src="https://i.blogs.es/da133a/1366_2000/450_1000.jpeg" alt="Frutas frescas">
+    </div>
+    <input type="text" name="postre_preferido" placeholder="Ej: Pastel de chocolate">
+
+    <label>
+      ¿Qué nivel de cocina tienes?
+      <select name="nivel_cocina" required>
+        <option value="">Selecciona una opción</option>
+        <option value="principiante">Principiante</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="avanzado">Avanzado</option>
+        <option value="chef">Chef profesional</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Qué es lo primero que evalúas cuando llega tu platillo?
+      <input type="text" name="evaluacion_primer_impacto" placeholder="Ej: Presentación, olor, temperatura...">
+    </label>
+
+    <label>
+      ¿Quieres compartir una receta de tu preferencia?
+      <textarea name="receta" rows="5" placeholder="Escribe tu receta aquí..."></textarea>
+    </label>
+
+    <label>
+      ¿Algo más que quieras compartir con nosotros?
+      <textarea name="comentarios_finales" rows="4" placeholder="Comentarios adicionales..."></textarea>
+    </label>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
+
